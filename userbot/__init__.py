@@ -1,6 +1,6 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
+# Copyright (C) 2020 Edelwaiss Group Company LLC.
 #
-# Licensed under the Raphielscape Public License, Version 1.c (the "License");
+# Licensed under Edelwaiss Group Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
 
@@ -79,7 +79,7 @@ ALIVE_NAME = os.environ.get("ALIVE_NAME") or None
 
 # Default .alive logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/099b2bf1c3256847946bf.mp4"
+    "ALIVE_LOGO") or "https://telegra.ph/file/b7bc352c0660e3094d0b0.jpg"
 
 # Default .alive username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME") or None
@@ -103,7 +103,7 @@ if G_BAN_LOGGER_GROUP:
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = (os.environ.get("UPSTREAM_REPO_URL")
-                     or "https://github.com/XNewbie/XBot-Remix")
+                     or "https://github.com/Furuhashii/edelweiss")
 
 # UPSTREAM_REPO_URL branch, the default is master
 UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH") or "staging"
@@ -298,7 +298,7 @@ with bot:
         async def handler(event):
             if event.message.from_id != uid:
                 await event.reply(
-                    "I'm [🔥XBOT-REMIX🔥](https://github.com/XNewbie/XBot-Remix) modules helper...\nplease make your own bot, don't use mine 😋"
+                    "I'm [Edelweiss-Bot](https://github.com/Furuhashii/edelweiss) modules helper...\nplease make your own bot, don't use mine 😋"
                 )
             else:
                 await event.reply(f"`Hey there {ALIVE_NAME}\n\nI work for you :)`")
@@ -313,7 +313,7 @@ with bot:
                 result = builder.article(
                     "Please Use Only With .help Command",
                     text="{}\nTotal loaded modules: {}".format(
-                        "[🔥XBOT-REMIX🔥](https://github.com/XNewbie/XBot-Remix) modules helper.\n",
+                        "[Edelweiss-Bot](https://github.com/Furuhashii/edelweiss) modules helper.\n",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -334,11 +334,11 @@ with bot:
                         [
                             custom.Button.url(
                                 "GitHub Repo",
-                                "https://github.com/XNewbie/XBot-Remix",
+                                "https://github.com/Furuhashii/Edelweiss",
                             ),
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/XBOTGBOT"),
+                                "https://t.me/hiinagiku"),
                         ],
                     ],
                     link_preview=False,
